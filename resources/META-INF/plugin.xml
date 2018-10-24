@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
-  <version>1.0</version>
+  <name>Transpose</name>
+  <version>0.1</version>
   <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
   <description><![CDATA[
@@ -30,8 +30,9 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="Transpose.transpose" class="TransposerClass" text="Transpose"
+    <action id="transpose" class="TransposerClass" text="Transpose"
             description="Transpose transposes the characters or selected text">
+      <keyboard-shortcut first-keystroke="control t" keymap="$default"/>
       <add-to-group group-id="EditMenu" anchor="first"/>
     </action>
   </actions>
