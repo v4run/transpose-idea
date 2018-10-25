@@ -1,19 +1,11 @@
 <idea-plugin>
-  <id>com.your.company.unique.plugin.id</id>
+  <id>com.varunvasan.transpose</id>
   <name>Transpose</name>
   <version>0.1</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      Transpose is an extension for transposing/swapping selections or characters.
     ]]></description>
-
-  <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
-    ]]>
-  </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
   <idea-version since-build="173.0"/>
@@ -32,7 +24,7 @@
     <!-- Add your actions here -->
     <action id="transpose" class="TransposerClass" text="Transpose"
             description="Transpose transposes the characters or selected text">
-      <keyboard-shortcut first-keystroke="control t" keymap="$default"/>
+      <keyboard-shortcut first-keystroke="control T" keymap="$default"/>
       <add-to-group group-id="EditMenu" anchor="first"/>
     </action>
   </actions>
